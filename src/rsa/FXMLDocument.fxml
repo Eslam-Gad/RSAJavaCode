@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="439.0" prefWidth="510.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="rsa.FXMLDocumentController">
+    <children>
+        <Button fx:id="msend" layoutX="17.0" layoutY="101.0" onAction="#sendToAndroid" prefHeight="38.0" prefWidth="307.0" text="Send To The Android APP Via Socket Stream">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextField fx:id="mtext" layoutX="17.0" layoutY="22.0" prefHeight="55.0" prefWidth="411.0" promptText="Type Your message ....">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="mshow" layoutX="17.0" layoutY="154.0" onAction="#showEncryptedM" prefHeight="38.0" prefWidth="307.0" text="Show Encypted Message">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <FontAwesomeIconView glyphName="KEY" layoutX="350.0" layoutY="164.0" rotate="45.0" size="70" wrappingWidth="56.0" />
+      <TextArea fx:id="mta" editable="false" layoutX="14.0" layoutY="217.0" prefHeight="171.0" prefWidth="418.0" promptText="Encrypted Message will Appear here...">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>
